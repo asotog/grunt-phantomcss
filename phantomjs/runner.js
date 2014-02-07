@@ -31,7 +31,7 @@ var phantomcss = require(phantomCSSPath+s+'phantomcss.js');
 phantomcss.init({
     screenshotRoot: args.screenshots,
     failedComparisonsRoot: args.failures,
-    libraryRoot: phantomCSSPath+s+'ResembleJs', // Give absolute path, otherwise PhantomCSS fails
+    libraryRoot: phantomCSSPath+s, // Give absolute path, otherwise PhantomCSS fails
 
     onFail: function(test) {
         sendMessage('onFail', test);
